@@ -1,0 +1,31 @@
+/* ==================== icons ==================== */
+/* line 2, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+.the-icons {
+  margin-top: 22px; }
+  /* line 4, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+  .the-icons .pure-u-1-4 {
+    cursor: pointer;
+    line-height: 32px;
+    height: 32px;
+    padding-left: 10px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px; }
+    /* line 6, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+    .the-icons .pure-u-1-4:hover {
+      background: #42b8dd;
+      color: #fff; }
+      /* line 8, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+      .the-icons .pure-u-1-4:hover [class^="icon-"], .the-icons .pure-u-1-4:hover [class*=" icon-"] {
+        *font-size: 28px;
+        *vertical-align: middle; }
+      /* line 9, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+      .the-icons .pure-u-1-4:hover [class^="icon-"]:before, .the-icons .pure-u-1-4:hover [class*=" icon-"]:before {
+        font-size: 28px;
+        vertical-align: -5px; }
+  /* line 13, C:/xampp/htdocs/kick-off/src/assets/sass/partials/icons.scss */
+  .the-icons [class^="icon-"], .the-icons [class*=" icon-"] {
+    width: 32px;
+    display: inline-block;
+    text-align: right;
+    margin-right: 10px; }

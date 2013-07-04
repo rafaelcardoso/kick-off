@@ -1,0 +1,520 @@
+<section class="pure-u-1">
+    <div class="box">
+
+    <h2 class="content-subhead">Default Form</h2>
+    <p>
+        To create a default inline form, add the <code>pure-form</code> classname to any <code>&lt;form&gt;</code> element.
+    </p>
+
+  
+    <form class="pure-form">
+    <fieldset>
+        <legend>A compact inline form</legend>
+
+        <input type="email" placeholder="Email">
+        <input type="password" placeholder="Password">
+
+        <label for="default-remember">
+            <input id="default-remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button pure-button-success">Sign in</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>A compact inline form<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">remember</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">remember</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span> Remember me
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button pure-button-success</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Sign in<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead" id="stacked-form">Stacked Form</h2>
+    <p>
+        To create a stacked form with input elements below the labels, add the <code>pure-form-stacked</code> classname to a <code>&lt;form&gt;</code> element alongside <code>pure-form</code>.
+    </p>
+
+  
+    <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>A Stacked Form</legend>
+
+        <label for="stacked-email">Email</label>
+        <input id="stacked-email" type="email" placeholder="Email">
+
+        <label for="stacked-password">Password</label>
+        <input id="stacked-password" type="password" placeholder="Password">
+
+        <label for="stacked-state">State</label>
+        <select id="stacked-state">
+            <option>AL</option>
+            <option>CA</option>
+            <option>IL</option>
+        </select>
+
+        <label for="stacked-remember" class="pure-checkbox">
+            <input id="stacked-remember" type="checkbox"> Remember me
+        </label>
+
+        <button type="submit" class="pure-button pure-button-success">Sign in</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form pure-form-stacked</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>A Stacked Form<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Email<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Password<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">state</span><span class="string quote">"</span><span class="support tag close">&gt;</span>State<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">select</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">state</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>AL<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>CA<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>IL<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">select</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">remember</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">remember</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span> Remember me
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button pure-button-success</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Sign in<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Aligned Form</h2>
+    <p>
+        To create an aligned form, add the <code>pure-form-aligned</code> classname to a <code>&lt;form&gt;</code> element alongside <code>pure-form</code>. In an aligned form, the labels are right-aligned against the form input controls, but on smaller screens revert to a <a href="#stacked-form">stacked form</a>.
+    </p>
+
+  
+    <form class="pure-form pure-form-aligned">
+    <fieldset>
+        <div class="pure-control-group">
+            <label for="aligned-name">Username</label>
+            <input id="aligned-name" type="text" placeholder="Username">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-password">Password</label>
+            <input id="aligned-password" type="password" placeholder="Password">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-email">Email Address</label>
+            <input id="aligned-email" type="email" placeholder="Email Address">
+        </div>
+
+        <div class="pure-control-group">
+            <label for="aligned-foo">Supercalifragilistic Label</label>
+            <input id="aligned-foo" type="text" placeholder="Enter something here...">
+        </div>
+
+        <div class="pure-controls">
+            <label for="aligned-cb" class="pure-checkbox">
+                <input id="aligned-cb" type="checkbox"> I've read the terms and conditions
+            </label>
+
+            <button type="submit" class="pure-button">Submit</button>
+        </div>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form pure-form-aligned</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-control-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">name</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Username<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">name</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Username</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-control-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Password<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">password</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-control-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Email Address<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Email Address</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-control-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">foo</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Supercalifragilistic Label<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">foo</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Enter something here...</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-controls</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">cb</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">cb</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span> I've read the terms and conditions
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Submit<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+    <h2 class="content-subhead">Multi-Column Form (with Pure Grids)</h2>
+    <p>
+        To create multi-column forms, include your form elements within a <a href="/grids/">Pure Grid</a>. The following example uses Pure Grids with a stacked form.
+    </p>
+
+  
+    <form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>Legend</legend>
+
+        <div class="pure-g-r">
+            <div class="pure-u-1-3">
+                <label for="multi-first-name">First Name</label>
+                <input id="multi-first-name" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-last-name">Last Name</label>
+                <input id="multi-last-name" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-email">E-Mail</label>
+                <input id="multi-email" type="email" required="">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-city">City</label>
+                <input id="multi-city" type="text">
+            </div>
+
+            <div class="pure-u-1-3">
+                <label for="multi-state">State</label>
+                <select id="multi-state" class="pure-input-medium">
+                    <option>AL</option>
+                    <option>CA</option>
+                    <option>IL</option>
+                </select>
+            </div>
+        </div>
+
+        <label for="multi-terms" class="pure-checkbox">
+            <input id="multi-terms" type="checkbox"> I've read the terms and conditions
+        </label>
+
+        <button type="submit" class="pure-button pure-button-success">Submit</button>
+    </fieldset>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form pure-form-stacked</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>Legend<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">legend</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-g-r</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">first-name</span><span class="string quote">"</span><span class="support tag close">&gt;</span>First Name<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">first-name</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">last-name</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Last Name<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">last-name</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>E-Mail<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> required<span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">city</span><span class="string quote">"</span><span class="support tag close">&gt;</span>City<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">city</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">state</span><span class="string quote">"</span><span class="support tag close">&gt;</span>State<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">select</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">state</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-medium</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+                    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>AL<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+                    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>CA<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+                    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>IL<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">option</span></span><span class="support tag close">&gt;</span>
+                <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">select</span></span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">terms</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+            <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">terms</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span> I've read the terms and conditions
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button pure-button-success</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Submit<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+    <h2 class="content-subhead">Grouped Inputs</h2>
+    <p>
+        To group sets of text-based input elements, wrap them in a <code>&lt;fieldset&gt;</code> element with a <code>pure-group</code> classname. Grouped inputs work well for sign-up forms and look natural on mobile devices.
+    </p>
+
+  
+    <form class="pure-form">
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Username">
+        <input type="text" class="pure-input-1-2" placeholder="Password">
+        <input type="email" class="pure-input-1-2" placeholder="Email">
+    </fieldset>
+
+    <fieldset class="pure-group">
+        <input type="text" class="pure-input-1-2" placeholder="Another Group">
+        <input type="text" class="pure-input-1-2" placeholder="More Stuff">
+    </fieldset>
+
+    <button type="submit" class="pure-button pure-input-1-2 pure-button-success">Sign in</button>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Username</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Password</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Email</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">fieldset</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Another Group</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">More Stuff</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">fieldset</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button pure-input-1-2 pure-button-success</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Sign in<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Input Sizing</h2>
+    <p>
+        Input elements have fluid width sizes in a syntax that is similar to <a href="/">Pure Grids</a>. You can apply a <code>pure-input-*</code> class to these elements.
+    </p>
+
+  
+    <form class="pure-form">
+    <input class="pure-input-1" type="text" placeholder=".pure-input-1"><br>
+    <input class="pure-input-2-3" type="text" placeholder=".pure-input-2-3"><br>
+    <input class="pure-input-1-2" type="text" placeholder=".pure-input-1-2"><br>
+    <input class="pure-input-1-3" type="text" placeholder=".pure-input-1-3"><br>
+    <input class="pure-input-1-4" type="text" placeholder=".pure-input-1-4"><br>
+ </form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-input-1</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">br</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-2-3</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-input-2-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">br</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-2</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-input-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">br</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-3</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-input-1-3</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">br</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1-4</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-input-1-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">br</span></span><span class="support tag close">&gt;</span>
+ <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+    <p>
+        You can control input sizing even further by wrapping them in grid containers. In the example below, the <code>&lt;input&gt;</code> elements have a <code>pure-input-1</code> class, but are wrapped in a <code>&lt;div&gt;</code> with a specific grid class.
+    </p>
+
+  
+    <form class="pure-form pure-g">
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-3-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-3-4">
+    </div>
+
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-8">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-8">
+    </div>
+    <div class="pure-u-1-4">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-4">
+    </div>
+    <div class="pure-u-1-2">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-2">
+    </div>
+
+    <div class="pure-u-1-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-2-5">
+    </div>
+    <div class="pure-u-2-5">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-2-5">
+    </div>
+
+    <div class="pure-u-1">
+        <input class="pure-input-1" type="text" placeholder=".pure-u-1">
+    </div>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form pure-g</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-3-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-3-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-8</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-8</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-8</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-8</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-4</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-2-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-2-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-2-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-2-5</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">div</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-u-1</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-1</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">.pure-u-1</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">div</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Required Inputs</h2>
+    <p>
+        To mark a form control as required, add the <code>required</code> attribute.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="email" placeholder="Requires an email" required="">
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">email</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Requires an email</span><span class="string quote">"</span> required<span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Disabled Inputs</h2>
+    <p>
+        To disable a form control, add the <code>disabled</code> attribute.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="text" placeholder="Disabled input here..." disabled="">
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">placeholder</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">Disabled input here...</span><span class="string quote">"</span> disabled<span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Rounded Inputs</h2>
+    <p>
+        To display a form control with rounded corners, add the <code>pure-input-rounded</code> classname.
+    </p>
+
+  
+    <form class="pure-form">
+    <input type="text" class="pure-input-rounded">
+    <button type="submit" class="pure-button">Search</button>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">text</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-input-rounded</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">button</span></span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">submit</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-button</span><span class="string quote">"</span><span class="support tag close">&gt;</span>Search<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">button</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+
+
+    <h2 class="content-subhead">Checkboxes and Radios</h2>
+    <p>
+        To normalize and align checkboxes and radio inputs, add the <code>pure-checkbox</code> or <code>pure-radio</code> classname.
+    </p>
+
+  
+    <form class="pure-form">
+    <label for="checkbox-radio-option-one" class="pure-checkbox">
+        <input id="checkbox-radio-option-one" type="checkbox" value="">
+        Here's option one.
+    </label>
+
+    <label for="checkbox-radio-option-two" class="pure-radio">
+        <input id="checkbox-radio-option-two" type="radio" name="optionsRadios" value="option1" checked="">
+        Here's a radio button. You can choose this one..
+    </label>
+
+    <label for="checkbox-radio-option-three" class="pure-radio">
+        <input id="checkbox-radio-option-three" type="radio" name="optionsRadios" value="option2">
+        ..Or this one!
+    </label>
+</form>
+
+  
+
+  <pre class="snippet" data-language="html"><code class="rainbow"><span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">form</span></span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-form</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-one</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-checkbox</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-one</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">checkbox</span><span class="string quote">"</span> <span class="support attribute">value</span><span class="support operator">=</span><span class="string quote">"</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        Here's option one.
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-two</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-radio</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-two</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">radio</span><span class="string quote">"</span> <span class="support attribute">name</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">optionsRadios</span><span class="string quote">"</span> <span class="support attribute">value</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option1</span><span class="string quote">"</span> checked<span class="support tag close">&gt;</span>
+        Here's a radio button. You can choose this one..
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">label</span></span> <span class="support attribute">for</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-three</span><span class="string quote">"</span> <span class="support attribute">class</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">pure-radio</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        <span class="support tag"><span class="support tag">&lt;</span><span class="support tag-name">input</span></span> <span class="support attribute">id</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option-three</span><span class="string quote">"</span> <span class="support attribute">type</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">radio</span><span class="string quote">"</span> <span class="support attribute">name</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">optionsRadios</span><span class="string quote">"</span> <span class="support attribute">value</span><span class="support operator">=</span><span class="string quote">"</span><span class="string value">option2</span><span class="string quote">"</span><span class="support tag close">&gt;</span>
+        ..Or this one!
+    <span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">label</span></span><span class="support tag close">&gt;</span>
+<span class="support tag"><span class="support tag">&lt;</span><span class="support tag special">/</span><span class="support tag-name">form</span></span><span class="support tag close">&gt;</span></code></pre>
+    </div>
+</section>

@@ -1,0 +1,26 @@
+/*@mixin transition($property, $duration, $function) {
+	-webkit-transition: $property $duration $function;
+   	-moz-transition: $property $duration $function;
+    -o-transition: $property $duration $function;
+    -ms-transition: $property $duration $function;
+    transition: $property $duration $function;
+}*/
+
+.inline-block {display:inline-block !important;*display:inline !important;zoom:1;}
+.component-bottom-diff {margin-bottom:30px !important;}
+.content-centered{text-align:center;}
+.content-left{text-align:left;}
+.content-right{text-align:righ;}
+.content-spaced{line-height: 1.8em;}
+.hero-block{
+	background: #1f8dd6;padding: 0.3em 1em;border-radius: 3px;color: #fff;
+	a{color: rgb(169, 226, 255);}
+}
+.alpha{margin-left:0}
+.omega{margin-right:0}
+.pull-right{float:right}
+.pull-left{float:left}
+.clear{clear:both;display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.cf:before,.cf:after{content:'\0020';display:block;overflow:hidden;visibility:hidden;width:0;height:0}
+.cf:after{clear:both}
+.cf{zoom:1}

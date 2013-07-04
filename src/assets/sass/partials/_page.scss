@@ -1,0 +1,8 @@
+/* ==================== page ==================== */
+body{background:url('../img/noise-texture.png') repeat;}
+.chromeframe{text-align:center;}
+@media (min-width: 970px) {
+    .content{padding-top:35px;}
+}
+.content{background:#fff;border-left: 1px solid #b7b7b7;border-right: 1px solid #b7b7b7;}
+.component{@extend .component-bottom-diff;}

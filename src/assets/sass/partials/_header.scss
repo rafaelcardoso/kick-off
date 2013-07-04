@@ -1,0 +1,9 @@
+/* ==================== page-header ==================== */
+.header{background:#fff;border-bottom: 1px solid #b7b7b7;}
+@media (max-width: 767px) {
+    .header {text-align: center;}
+}
+
+@media (min-width: 970px) {
+    .header {width: 100%;position: fixed;top: 0;left: 0;z-index: 100;}
+}

@@ -1,0 +1,28 @@
+.hover-effect{
+	background:#ccc;
+	padding: 3px;
+	&:hover{
+		background:#4d85d1;
+		@include transition(background, 0.9s, linear, 0.9s);
+	}
+}
+
+.books{
+	list-style:none;
+	padding: 0;
+	li{
+		@extend .inline-block;
+		float:left;
+		margin-right:3px;
+		&.last{margin-right:0;}
+		a{display: block;}
+		img{
+			@extend .hover-effect;
+		}
+	}
+}
+
+.pure-video{
+	width: 100%;
+	@extend .hover-effect;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>HTML5 kick-off</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- Apple touch icons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144-precomposed.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png">
+    <!-- Tile win 8 -->
+    <meta name="msapplication-TileImage" content="assets/img/favicons/metro-tile.png"/>
+    <!-- Default favicon -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="assets/img/favicons/favicon.ico">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- JS -->
+    <script src="assets/js/vendor/modernizr/modernizr.js"></script>
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</head>
+<body>
+
+<!--[if lt IE 9]>
+    <div class="alert-danger">
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    </div>
+<![endif]-->
+    
+<header class="pure-g-r header">
+    <div class="container">
+        <div class="pure-u-1">
+            <div class="pure-menu pure-menu-open pure-menu-horizontal">
+                <a class="pure-menu-heading" href="/kick-off/src">Your Site</a>
+                <ul>
+                    <li class="<?php echo ($_GET['page'] == 'base') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=base">Base</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'grids') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=grids">Grids</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'forms') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=forms">Forms</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'buttons') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=buttons">Buttons</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'tables') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=tables">Tables</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'menus') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=menus">Menus</a></li>
+                    <li class="<?php echo ($_GET['page'] == 'icons') ? 'pure-menu-selected' : '';?>"><a href="/kick-off/src?page=icons">Icons</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container content">
+    <div class="pure-g-r">
