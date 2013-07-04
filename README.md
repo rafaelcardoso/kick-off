@@ -74,7 +74,7 @@ The structure of the project is given in the following way:
 │	│		│ 	│	├──	_tables.scss
 │	│		│ 	│	└──	_typography.scss
 │	│		│ 	└── extended/
-│	│		│		└──	_typography.scss
+│	│		│		└──	_post.scss
 │	│	 	├── misc/
 │	│		│	├── _colors.scss
 │	│		│	├── _helpers.scss
