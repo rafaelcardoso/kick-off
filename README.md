@@ -42,7 +42,7 @@ The structure of the folders is given in the following way:
 	│	└── sass
 	│	 	├── components
 	│	 	│	├── default
-	│		│ 	└── extended
+	│		│	└── extended
 	│	 	├── misc
 	│	 	├── partials
 	│	 	└── vendor
