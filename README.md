@@ -4,11 +4,11 @@ Kick-off is a web project prototype that's based on [HTML5 Boilerplate](http://w
 
 ### Features
 
-Writed in Sass + Compass
-1. Uses Grunt to automate tasks like jshint, concat, uglify, minify and compile
-2. Uses Bower to manage package dependencies (jQuery and Modernizr are included)
-3. Sprites are generated automatically by Compass (believe me, this is awesome)
-4. Comes with the homepage as blog and is responsive
+1. Writed in Sass + Compass
+2. Uses Grunt to automate tasks like jshint, concat, uglify, minify and compile
+3. Uses Bower to manage package dependencies (jQuery and Modernizr are included)
+4. Sprites are generated automatically by Compass (believe me, this is awesome)
+5. Comes with the homepage as blog and is responsive
 
 ## Installation
 
