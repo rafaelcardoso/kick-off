@@ -1,6 +1,14 @@
 # Kick-off
 
-Kick-off is a web project prototype that's based on [HTML5 Boilerplate](http://www.html5boilerplate.com/) and [Pure](purecss.io). This tool was developed for those who need a boilerplate oriented to modules (css and js) to start a new project.
+Kick-off is a web project prototype that's based on [HTML5 Boilerplate](http://www.html5boilerplate.com/) and [Pure CSS](purecss.io). This tool was developed for those who need a boilerplate oriented to modules (css and js) to start a new project.
+
+### Features
+
+Writed in Sass + Compass
+Uses Grunt to automate tasks like jshint, concat, uglify, minify and compile
+Uses Bower to manage package dependencies (jQuery and Modernizr are included)
+Sprites are generated automatically by Compass (believe me, this is awesome)
+Comes with the homepage as blog and is responsive
 
 ## Installation
 
@@ -134,6 +142,11 @@ Contains the `.html` from header and footer of the pages (just for don't repeat 
 ## Development guides
 
 To Do: Explain the development guides
+
+## To do
+
+Improve the Gruntfile.js to generate a optimized build
+Improve the tag's indentation of .html files in [src/pages](https://github.com/rafaelcardoso/kick-off/tree/master/src/pages)
 
 ## Contributing
 
