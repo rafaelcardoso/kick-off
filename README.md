@@ -2,6 +2,8 @@
 
 Kick-off is a web project prototype that's based on [HTML5 Boilerplate](http://www.html5boilerplate.com/) and [Pure CSS](purecss.io). This tool was developed for those who need a boilerplate oriented to modules (css and js) to start a new project.
 
+![image](src/assets/img/kick-off.png)
+
 ### Features
 
 1. Writed in Sass + Compass
